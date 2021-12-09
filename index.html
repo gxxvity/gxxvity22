@@ -1,0 +1,152 @@
+<!DOCTYPE html><!--22161096신예린-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
+
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins',sans-serif;
+    }
+    section {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      min-height: 100vh;
+      padding: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: black;
+      color: #fff;
+      z-index: -2;
+    }
+
+    section header{
+      position: absolute;
+      top: 13px;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      padding: 0 ;
+      z-index: 1000;
+    }
+
+    section video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(200, 79, 125, 0.7);
+      mix-blend-mode: overlay;
+    }
+
+    .text{
+      position: relative;
+      z-index: 10;
+      top: 250px;
+    }
+    .text h2{
+      font-size: 4.2em;
+      font-weight: 800;
+      line-height: 1em;
+      text-transform: uppercase;
+    }
+    .text h3{
+      font-size: 1.5em;
+      font-weight: 700;
+      line-height: 1em;
+      text-transform: uppercase;
+    }
+
+    .text p{
+      font-size: 14px;
+      margin: 10px 0;
+      font-weight: 400px;
+    }
+    .menu ul li{
+      z-index: 10;
+      list-style: none;
+      margin-right: 20px;
+      display: inline;
+      color: white;
+      text-decoration: none;
+    }
+    .menu ul li a{
+      text-decoration: none;
+      font-size: 17px;
+      position: relative;
+    }
+    .menu ul li a:before{
+      content: "";
+      height: 4px;
+      width: 0;
+      background-color: #fff;
+      border-radius: 10px;
+      transition: 0.5s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .menu ul li a:hover::before{
+      width: 100%;
+      background-color: #f04F9D;
+      width: 100%;
+    }
+
+    .menu ul li a:link { color: white; text-decoration: none;}
+    .menu ul li a:visited {text-decoration : none; color : white;}
+    .menu ul li a:hover{text-decoration : none; color : #f04F9D;}
+    .menu ul li a:active{text-decoration : none;color : white;}
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h2 class="logo">
+          <a href="index.html">
+            <img src="source/logo2.png" width="80px">
+          </a>
+        </h2>
+
+        <div class="menu">
+          <ul>
+            <li><a href="thevol.html">The Volunteers</a></li>
+            <li><a href="album.html">Album</a></li>
+            <li><a href="photo.html">photo</a></li>
+            <li><a href="video.html">Video</a></li>
+          </ul>
+        </div>
+      </header>
+
+    <video src="source/pink.mp4" muted loop autoplay>
+      </video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Pink Top</h2>
+        <h3>The Volunteers</h3>
+        <p>As long as I walk my path,
+          Honey it don't matter</p>
+      </div>
+
+    </section>
+  </body>
+</html>

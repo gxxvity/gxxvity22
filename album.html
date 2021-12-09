@@ -1,0 +1,207 @@
+<!DOCTYPE html><!--22161096신예린-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
+
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins',sans-serif;
+    }
+
+    section {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      background: black;
+      /*display: block;*/
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    section header{
+      position: absolute;
+      top: 13px;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      padding: 0 ;
+    }
+
+
+    .menu ul li{
+      z-index: 10;
+      list-style: none;
+      margin-right: 20px;
+      display: inline;
+      color: white;
+      text-decoration: none;
+    }
+    .menu ul li a{
+      text-decoration: none;
+      font-size: 15px;
+      position: relative;
+    }
+    .menu ul li a:before{
+      content: "";
+      height: 4px;
+      width: 0;
+      background-color: #fff;
+      border-radius: 10px;
+      transition: 0.5s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .menu ul li a:hover::before{
+      width: 100%;
+      background-color: #f04F9D;
+      width: 100%;
+    }
+    .menu ul li a:link { color: white; text-decoration: none;}
+    .menu ul li a:visited {text-decoration : none; color : white;}
+    .menu ul li a:hover{text-decoration : none; color : #f04F9D;}
+    .menu ul li a:active{text-decoration : none;color : white;}
+
+    .wrap{
+      width: 850px;
+      height:500px;
+      margin : 0 auto;
+      margin-top : 170px;
+    }
+
+    .con div{
+      float : left
+    }
+    .con .text{
+      color : white;
+      margin-left : 40px;
+      margin-top : 14px;
+    }
+      .con h2{
+        font-size :2em;
+        color: #f04F9D;
+      }
+      .con h4{
+        float : right;
+      }
+
+      .info{
+        margin-top: 17px;
+        display: block;
+      }
+      .info li{
+        font-size : 13px;
+        list-style : none;
+      }
+      .info b{
+        font-size : 15px;
+        color: #f04F9D;
+      }
+
+      audio{
+        position : absolute;
+        left :50%;
+        top : 72%;
+        transform : translate(-50%,-72%);
+
+      }
+
+    footer{
+      color: white;
+      background-color: #f04F9D;
+      height: auto;
+      margin-top: 90px;
+      padding-top: 40px;
+      padding-bottom:40px;
+      }
+
+      .footer_content{
+        text-align: center;
+      }
+
+      .footer_content h3{
+        color: white;
+        margin-bottom: 5px;
+      }
+      .footer_content p{
+        font-size: 12px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h2 class="logo">
+          <a href="index.html">
+            <img src="source/logo2.png" width="60px">
+          </a>
+        </h2>
+
+        <div class="menu">
+          <ul>
+            <li><a href="thevol.html">The Volunteers</a></li>
+            <li><a href="album.html">Album</a></li>
+            <li><a href="photo.html">photo</a></li>
+            <li><a href="video.html">Video</a></li>
+          </ul>
+        </div>
+      </header>
+
+<div class="wrap">
+<div class="con">
+
+      <div class="photo">
+          <img src="source/album.jfif" width="390px">
+      </div>
+
+      <div class="text">
+        <h2>
+          The Volunteers <br>
+          정규1집 [The Volunteers]
+        </h2>
+        <h4>발매&nbsp;&nbsp;2021.06.15</h4>
+
+        <br>
+
+        <ul class="info">
+          <li><b>Track1</b>&nbsp;&nbsp;&nbsp;Violet</li>
+          <li><b>Track2</b>&nbsp;&nbsp;&nbsp;PINKTOP</li>
+          <li><b>Track3</b>&nbsp;&nbsp;&nbsp;Let me go!</li>
+          <li><b>Track4</b>&nbsp;&nbsp;&nbsp;Time to fight back in my way</li>
+          <li><b>Track5</b>&nbsp;&nbsp;&nbsp;Radio</li>
+          <li><b>Track6</b>&nbsp;&nbsp;&nbsp;Crap</li>
+          <li><b>Track7</b>&nbsp;&nbsp;&nbsp;Nicer</li>
+          <li><b>Track8</b>&nbsp;&nbsp;&nbsp;Medicine</li>
+          <li><b>Track9</b>&nbsp;&nbsp;&nbsp;S.A.D</li>
+          <li><b>Track10</b>&nbsp;&nbsp;&nbsp;Summer</li>
+        </ul>
+      </div><!--text-->
+
+      <audio src="source/top.mp3" controls></audio>
+
+
+    </div><!--con-->
+
+    </div><!--wrap-->
+
+    <footer>
+      <div class="footer_content">
+        <h3>BLUE VINYL</h3>
+        <p>kaywon university of art and design
+         <br>
+        Digital Media Design <br> 22161096 SHIN YE RIN
+        </p>
+          <p>ⓒ 2021. SHIN YE RIN all rights reserved</p>
+      </div>
+
+    </footer>
+</section>
+  </body>
+</html>
